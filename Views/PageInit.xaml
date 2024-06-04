@@ -4,6 +4,18 @@
              x:Class="PM0220242P.Views.PageInit"
              Title="PageInit">
     <VerticalStackLayout>
+
+        <Image 
+             Source="{Binding Persona.Foto}" 
+             HeightRequest="200" 
+             WidthRequest="200"
+             Margin="20,5,20,5"
+             BackgroundColor="Azure"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"/>
+
+        <Button Text="Tomar Imagen" x:Name="btnfoto" Clicked="btnfoto_Clicked"></Button>
+        
         <Label 
             Text="Nombres"
             VerticalOptions="Start" 
@@ -46,12 +58,6 @@
         <Entry 
                 Text="{Binding Persona.Telefono}" 
                 x:Name="Telefono" 
-                Margin="20,5,20,5"/>
-
-        <Image 
-                Source="{Binding Persona.Foto}" 
-                HeightRequest="200" 
-                WidthRequest="200"
                 Margin="20,5,20,5"/>
 
         <Button x:Name="btnaceptar" Text="Aceptar" Background="BlueViolet" TextColor="White" Clicked="btnaceptar_Clicked"/>
