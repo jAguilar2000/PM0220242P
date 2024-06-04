@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM0220242P.Views.PageInit"
+             Title="PageInit">
+    <VerticalStackLayout>
+        <Label 
+            Text="Nombres"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" 
+            Margin="20,0,20,0"/>
+            <Entry 
+                Text="{Binding Persona.Nombres}" 
+                MaxLength="100"
+                x:Name="Nombres" 
+                Keyboard="Text" 
+                Margin="20,5,20,5"/>
+
+        <Label 
+            Text="Apellidos"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" 
+            Margin="20,0,20,0"/>
+            <Entry 
+                Text="{Binding Persona.Apellidos}" 
+                MaxLength="100"
+                x:Name="Apellidos" 
+                Keyboard="Text" 
+                Margin="20,5,20,5"/>
+
+        <Label 
+            Text="Fecha de Nacimiento"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" 
+            Margin="20,0,20,0"/>
+        <DatePicker 
+                Date="{Binding Persona.FechaNac}" 
+                x:Name="FechaNac" 
+                Margin="20,5,20,5"/>        
+        
+        <Label 
+            Text="Telefono"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" 
+            Margin="20,0,20,0"/>
+        <Entry 
+                Text="{Binding Persona.Telefono}" 
+                x:Name="Telefono" 
+                Margin="20,5,20,5"/>
+
+        <Image 
+                Source="{Binding Persona.Foto}" 
+                HeightRequest="200" 
+                WidthRequest="200"
+                Margin="20,5,20,5"/>
+
+        <Button x:Name="btnaceptar" Text="Aceptar" Background="BlueViolet" TextColor="White" Clicked="btnaceptar_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
