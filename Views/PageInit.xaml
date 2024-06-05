@@ -11,8 +11,9 @@
              WidthRequest="200"
              Margin="20,5,20,5"
              BackgroundColor="Azure"
-            HorizontalOptions="CenterAndExpand"
-            VerticalOptions="CenterAndExpand"/>
+             HorizontalOptions="CenterAndExpand"
+             VerticalOptions="CenterAndExpand"
+             x:Name="FotoImage"/>
 
         <Button Text="Tomar Imagen" x:Name="btnfoto" Clicked="btnfoto_Clicked"></Button>
         
